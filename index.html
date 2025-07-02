@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analisador de Texto e Pesquisa</h1>
+        <form id="textForm">
+            <label for="textArea">Digite seu texto aqui:</label>
+            <textarea id="textArea" rows="10" placeholder="Escreva sobre seus interesses, opiniões ou qualquer outro tópico."></textarea>
+            <button type="submit">Analisar Texto</button>
+        </form>
+
+        <div class="results">
+            <div class="section">
+                <h2>Palavras Mais Comuns</h2>
+                <div id="mostCommonWords" class="word-list"></div>
+            </div>
+
+            <div class="section">
+                <h2>Diferenciando Estruturas de Dados (Exemplo)</h2>
+                <p>O JavaScript utiliza diferentes estruturas para armazenar dados. Aqui estão alguns exemplos baseados na sua entrada:</p>
+                <ul>
+                    <li>**String (Texto puro):** <span id="stringExample"></span></li>
+                    <li>**Array (Lista de palavras):** <span id="arrayExample"></span></li>
+                    <li>**Objeto (Contagem de palavras):** <span id="objectExample"></span></li>
+                </ul>
+                <button id="showDataStructures">Mostrar Estruturas de Dados</button>
+            </div>
+
+            <div class="section">
+                <h2>Contato de Palavras Ordenado</h2>
+                <div id="sortedWordContact" class="word-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 João Victor, 2º Ano A. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
